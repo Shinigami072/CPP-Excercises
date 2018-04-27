@@ -40,15 +40,15 @@ namespace utility {
         auto l = left+current;
         if(left+current>=left_end)
             l=left_end;
-        auto r = left+current;
-        if(left+current>=left_end)
-            l=left_end;
-        auto zl = left+current;
-        if(left+current>=left_end)
-            l=left_end;
-        auto zr = left+current;
-        if(left+current>=left_end)
-            l=left_end;
+        auto r = right+current;
+        if(right+current>=right_end)
+            r=right_end;
+        auto zl = z.left+z.current;
+        if(z.left+z.current>=z.left_end)
+            zl=z.left_end;
+        auto zr = z.right+z.current;
+        if(z.right+z.current>=z.right_end)
+            zr=z.right_end;
 
         return l !=zl || r != zr;
     }
