@@ -8,4 +8,4 @@ project(iterable)
 #target_include_directories(libiterable PUBLIC .)
 
 add_library(libiterable STATIC Iterable.cpp Iterable.h)
-target_include_directories(libiterable PUBLIC ./stuff)
+target_include_directories(libiterable PUBLIC .)

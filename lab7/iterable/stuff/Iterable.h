@@ -44,7 +44,7 @@ namespace utility {
     };
     class IterableIteratorWrapper {
     public:
-        IterableIteratorWrapper(std::unique_ptr<IterableIterator> iterator):iter(move(iterator)) {}
+        IterableIteratorWrapper(std::unique_ptr<IterableIterator> iterator) {iter = move(iterator);}
 
 
 
